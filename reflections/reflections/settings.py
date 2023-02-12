@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*+)%0@z&6#1na!zquv^rvmh8uvp(uz))s^v&0)b7a6e71w07yu'
+SECRET_KEY = 'django-insecure-(_kx$++1a4lja744w7)7lpj+hw_z^__fcb=u-5x@k!e-)e!n$+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gpt3',
+    'book_buddy',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'reflections.urls'
@@ -100,6 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/

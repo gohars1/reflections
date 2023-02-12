@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class Gpt3Config(AppConfig):
+class BookBuddyConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'gpt3'
+    name = 'book_buddy'
